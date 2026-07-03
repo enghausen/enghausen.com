@@ -1,0 +1,33 @@
+---
+title: "Building enghausen.com"
+description: "Placeholder post exercising the MDX pipeline: frontmatter, headings, code blocks and tags."
+date: "2026-07-03"
+tags: ["meta", "next.js"]
+draft: true
+---
+
+This is a draft placeholder that exercises the full blog pipeline. It is
+excluded from production builds until real content replaces it.
+
+## Stack
+
+The site is built with Next.js (App Router), Tailwind 4 and MDX content
+stored in the repository. Fonts are self-hosted, and the theme follows the
+system via `light-dark()`.
+
+## Code blocks
+
+Syntax highlighting is handled by Shiki through `rehype-pretty-code`, with a
+light and a dark theme emitted side by side:
+
+```ts
+export function greet(name: string): string {
+  return `Hello, ${name}`;
+}
+```
+
+## Checklist
+
+- Frontmatter parsed with gray-matter
+- Headings get anchor links
+- Drafts excluded in production
