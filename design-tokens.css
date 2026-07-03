@@ -1,0 +1,74 @@
+/*
+ * enghausen.com design tokens (Tailwind 4, CSS-first).
+ * Imported from app/globals.css. Brand reference: SITE.md, "Brand" section.
+ *
+ * - Orange (#d47830) is the primary identity color
+ * - Theme follows the system via light-dark(); no JS toggle in v1
+ * - Two typefaces, two roles: JetBrains Mono (logo, code), Outfit (everything else)
+ */
+
+@import "tailwindcss";
+
+/* ---------- Raw palette (theme-independent) ---------- */
+@theme {
+  /* Brand oranges */
+  --color-brand: #d47830;        /* logo, "eng", dot, primary accent */
+  --color-brand-accent: #f28a1c; /* hover states, highlights */
+  --color-brand-hot: #ff8c00;    /* cursor, active selection, CTA */
+  --color-brand-muted: #8a4a1e;  /* borders, tertiary accents, small orange on light bg */
+
+  /* Neutrals */
+  --color-surface: #1c1c1c;      /* logo container, dark surfaces; never theme-switches */
+  --color-bg-dark: #0a0a0a;      /* Site bg, dark theme */
+  --color-bg-light: #f8f7f4;     /* Site bg, light theme */
+  --color-ink-dark: #c8c4bc;     /* Body text on dark (warm white) */
+  --color-ink-light: #2a2a2a;    /* Body text on light (near black) */
+  --color-muted: #6a6862;        /* Secondary text, separators */
+
+  /* Typography */
+  --font-sans: "Outfit Variable", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+}
+
+/* ---------- Semantic, theme-adaptive tokens ---------- */
+/* light-dark() picks per user preference; matches the brand guide's own CSS. */
+:root {
+  color-scheme: light dark;
+}
+
+@theme inline {
+  --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
+  --color-ink: light-dark(var(--color-ink-light), var(--color-ink-dark));
+  /* Small orange text needs the muted shade on light backgrounds for WCAG
+     contrast; use text-brand for large elements, text-brand-safe for small text. */
+  --color-brand-safe: light-dark(var(--color-brand-muted), var(--color-brand));
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  code, pre, kbd {
+    font-family: var(--font-mono);
+  }
+  ::selection {
+    background-color: var(--color-brand-hot);
+    color: var(--color-surface);
+  }
+}
+
+/* ---------- Brand utilities ---------- */
+@layer components {
+  /* Blinking pipe cursor, used in the hero prompt. */
+  .cursor-pipe::after {
+    content: "|";
+    color: var(--color-brand-hot);
+    animation: pipe-blink 1.1s steps(1) infinite;
+  }
+  @keyframes pipe-blink {
+    50% { opacity: 0; }
+  }
+}
