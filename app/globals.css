@@ -1,0 +1,89 @@
+@import "../design-tokens.css";
+
+/* ---------- Post body (MDX) ---------- */
+@layer components {
+  .post-body {
+    line-height: 1.75;
+  }
+  .post-body > * + * {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .post-body h2,
+  .post-body h3 {
+    font-weight: 600;
+    margin-top: calc(var(--spacing) * 10);
+    scroll-margin-top: calc(var(--spacing) * 24);
+  }
+  .post-body h2 {
+    font-size: var(--text-2xl);
+  }
+  .post-body h3 {
+    font-size: var(--text-xl);
+  }
+  .post-body h2 a,
+  .post-body h3 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .post-body h2 a:hover::after,
+  .post-body h3 a:hover::after {
+    content: " #";
+    color: var(--color-brand-safe);
+  }
+  .post-body p a,
+  .post-body li a {
+    color: var(--color-brand-safe);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .post-body ul,
+  .post-body ol {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .post-body ul {
+    list-style: disc;
+  }
+  .post-body ol {
+    list-style: decimal;
+  }
+  .post-body li + li {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .post-body blockquote {
+    border-left: 2px solid var(--color-brand);
+    padding-left: calc(var(--spacing) * 4);
+    color: var(--color-muted);
+  }
+  .post-body code {
+    font-size: 0.9em;
+  }
+  .post-body :not(pre) > code {
+    background-color: light-dark(
+      color-mix(in srgb, var(--color-ink-light) 8%, transparent),
+      color-mix(in srgb, var(--color-ink-dark) 12%, transparent)
+    );
+    border-radius: var(--radius-sm);
+    padding: 0.15em 0.35em;
+  }
+  .post-body pre {
+    border: 1px solid
+      light-dark(
+        color-mix(in srgb, var(--color-ink-light) 15%, transparent),
+        color-mix(in srgb, var(--color-ink-dark) 15%, transparent)
+      );
+    border-radius: var(--radius-lg);
+    padding: calc(var(--spacing) * 4);
+    overflow-x: auto;
+  }
+}
+
+/* Shiki dual themes: rehype-pretty-code emits both palettes as CSS variables;
+   pick per system preference to match light-dark() theming. */
+@media (prefers-color-scheme: dark) {
+  .post-body pre,
+  .post-body code[data-theme],
+  .post-body code[data-theme] span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+}
