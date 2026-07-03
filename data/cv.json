@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "version": "0.6-draft",
+    "updated": "2026-07-02",
+    "note": "Single source of truth for CV data. The sharp truth: only skills and claims Morten can fully stand behind in conversation. This file feeds the /cv page, the terminal 'cv' command, and later the LinkedIn refresh.",
+    "tone": "Tone principle: concrete over grandiose. Facts and numbers, no self-praise, no explanations for job changes (curation, not confession). Grades are never shown. Skills kept at a general level."
+  },
+  "basics": {
+    "name": "Morten Rode Enghausen",
+    "label": "Software engineering student | IT infrastructure & operations specialist",
+    "location": "Aarhus area, Denmark",
+    "email": "TODO: hej@enghausen.com once the email migration is done",
+    "profiles": [
+      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/enghausen/" },
+      { "network": "GitHub", "url": "https://github.com/enghausen" }
+    ]
+  },
+  "summary": "Software engineering student at Aarhus University with more than a decade of hands-on experience in IT infrastructure, operations and business-critical systems, most recently the electronic health record system serving Central Denmark Region. Trained data technician, thorough and documentation-driven, with a profile spanning servers, networking, automation and process management, now adding formal software engineering on top.",
+  "education": [
+    {
+      "institution": "Aarhus University",
+      "area": "Software Technology",
+      "degree": "Bachelor of Engineering (BEng) in Software Technology",
+      "degree_da": "Diplomingeni\u00f8r i Softwareteknologi",
+      "start": "2025-01",
+      "end": "2028-01",
+      "status": "In progress, 3 semesters completed",
+      "merit": [
+        { "course": "E5IPR-01 Internship", "ects": 30, "basis": "Credits transferred based on vocational experience", "year": 2024 },
+        { "course": "E3KNP-01 Communication Networks and Network Programming", "ects": 5, "basis": "Credits transferred based on vocational training", "year": 2014, "note": "Counts toward 3rd semester" }
+      ],
+      "semesters": [
+        {
+          "term": "1st semester, spring 2025",
+          "courses": [
+            { "code": "E1IDE-01", "name": "Introductory Digital Electronics", "ects": 5 },
+            { "code": "E1LMEK-01", "name": "Linear Mathematical Analysis and Electric Circuits", "ects": 10 },
+            { "code": "SW1MSYS-01", "name": "Microcontroller Systems", "ects": 5 },
+            { "code": "SW1OPRG-01", "name": "Object Based Programming", "ects": 5 },
+            { "code": "SW1PRJ1-01", "name": "Project 1", "ects": 5 },
+            { "code": "SW1VPR1-01", "name": "Practical Training 1", "ects": 0 }
+          ]
+        },
+        {
+          "term": "2nd semester, autumn 2025",
+          "courses": [
+            { "code": "SW2OOP-01", "name": "Objectoriented Programming", "ects": 5 },
+            { "code": "SW2PLA-02", "name": "Practical Linear Algebra for Software Developers", "ects": 5 },
+            { "code": "SW2PROF-01", "name": "Programming Skills", "ects": 5 },
+            { "code": "SW2STS-01", "name": "Probability Theory and Statistics", "ects": 5 },
+            { "code": "SW2PRJ2-03", "name": "Project 2 and Systems Engineering", "ects": 10 }
+          ]
+        },
+        {
+          "term": "3rd semester, spring 2026",
+          "courses": [
+            { "code": "SW3AD", "name": "Algorithms and Data Structures", "ects": 5 },
+            { "code": "SW3DSB-01", "name": "Digital Signal Processing", "ects": 5 },
+            { "code": "SW3SYS-01", "name": "System Programming", "ects": 10 },
+            { "code": "SW3PRJ3-02", "name": "Project 3", "ects": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Aarhus University",
+      "area": "Engineering admission course, Aarhus University School of Engineering",
+      "degree": "Admission course",
+      "start": "2015",
+      "end": "2016"
+    },
+    {
+      "institution": "AARHUS TECH",
+      "area": "Data Technician specializing in networking and data infrastructure",
+      "degree": "Vocational degree (5-year apprenticeship)",
+      "start": "2009",
+      "end": "2014"
+    }
+  ],
+  "work": [
+    {
+      "company": "Central Denmark Region (Region Midtjylland)",
+      "position": "IT Specialist",
+      "start": "2022-08",
+      "end": "2024-12",
+      "location": "Aarhus (hybrid)",
+      "summary": "Application team behind MidtEPJ, the electronic health record system (by Systematic) serving ~25,000 daily clinical users.",
+      "endNote": "Resigned to pursue the engineering degree full-time",
+      "highlights": [
+        "Release management for major/minor/hotfix releases across test and production, including final quality control before go-live",
+        "Software deployment on a large Citrix cluster and backend operations for all MidtEPJ integrations",
+        "Incident and problem manager, with root-cause analysis spanning Java code, servers and end clients",
+        "Automation of complex application flows in Perl, PowerShell and Python",
+        "ServiceNow development: dashboards and reporting supporting SCRUM-style two-week sprints"
+      ]
+    },
+    {
+      "company": "Aurantiaco Esport",
+      "position": "Founder, Manager & Coach",
+      "start": "2021-06",
+      "end": "2023-03",
+      "location": "Denmark (remote)",
+      "summary": "Founded a semi-professional CS:GO organization competing in POWER Ligaen, Division 3.",
+      "highlights": [
+        "Full operational responsibility: recruitment, team morale, finances, contracts and investments",
+        "Built the technical platform with servers and tooling for the entire team"
+      ]
+    },
+    {
+      "company": "Syddjurs Municipality",
+      "position": "E-sports Coach & Teacher",
+      "start": "2019-06",
+      "end": "2022-08",
+      "location": "Hornslet (part-time)",
+      "summary": "Taught e-sports to 7th-9th grade students, evening classes and electives, classes of up to 30 students.",
+      "highlights": [
+        "Responsible for three e-sports locations: workstations, equipment, network and teaching materials",
+        "Planned summer and winter camps for up to 40 students",
+        "Moved all teaching online during the COVID lockdown while keeping engagement high",
+        "Three DGI coaching certifications"
+      ]
+    },
+    {
+      "company": "Petabit ApS",
+      "position": "Software Developer & Owner",
+      "start": "2019-06",
+      "end": "2020-05",
+      "location": "Aarhus",
+      "summary": "Own company: an analytics tool turning CS:GO demo data into actionable insights for players and teams.",
+      "highlights": [
+        "Designed and built the analysis tool primarily in Python, containerized with Docker and developed in a GitHub-based workflow",
+        "Ran development and test environments across Hetzner, DigitalOcean, AWS and Azure",
+        "Reached beta before being discontinued; later an early backer of Leetify, a similar analytics product"
+      ]
+    },
+    {
+      "company": "Kamstrup",
+      "position": "System Administrator",
+      "start": "2019-02",
+      "end": "2019-08",
+      "location": "Aarhus area",
+      "summary": "Classic system administration in an on-premise environment.",
+      "highlights": [
+        "Day-to-day operation of the server room: Windows servers, file services, storage and backup",
+        "User and client administration with Active Directory and Group Policy",
+        "Same technical foundation as the Danske Fragtm\u00e6nd years, minus the networking responsibility"
+      ]
+    },
+    {
+      "company": "Agency for Governmental IT Services (Statens It)",
+      "position": "IT Project Manager",
+      "start": "2017-10",
+      "end": "2018-03",
+      "location": "Copenhagen",
+      "summary": "Continued the Danish Agricultural Agency system separation after the consolidation of governmental IT.",
+      "highlights": [
+        "Achieved PRINCE2 Foundation certification",
+        "Split the Agriculture and Fisheries Agency IT systems into two separate entities with minimal service disruption"
+      ]
+    },
+    {
+      "company": "Danish Agricultural Agency (Landbrugsstyrelsen)",
+      "position": "IT Coordinator & Problem Manager",
+      "start": "2017-02",
+      "end": "2017-10",
+      "location": "Copenhagen",
+      "summary": "Coordinated IT projects and managed problems in close collaboration with IT leadership.",
+      "highlights": [
+        "Bridge between engineering and management on complex IT challenges",
+        "Role transitioned to Statens It as part of the governmental IT consolidation"
+      ]
+    },
+    {
+      "company": "Nets Denmark",
+      "position": "IT Support Specialist, IT Business Support",
+      "start": "2016-01",
+      "end": "2016-08",
+      "location": "Copenhagen",
+      "summary": "Operations and monitoring of payment systems in the financial sector.",
+      "highlights": [
+        "Took part in relocating payment systems from Finland to Denmark",
+        "Focus on secure and stable card payment operations"
+      ]
+    },
+    {
+      "company": "Danske Fragtm\u00e6nd A/S",
+      "position": "IT Consultant (following the apprenticeship)",
+      "start": "2014-05",
+      "end": "2015-02",
+      "location": "Aarhus area",
+      "summary": "Continued full-time on the same stack as the apprenticeship: Microsoft roles, Hyper-V, Ubuntu, Atlassian, Cisco/HP networking."
+    },
+    {
+      "company": "Danske Fragtm\u00e6nd A/S",
+      "position": "Data Technician Apprentice, specializing in infrastructure",
+      "start": "2009-05",
+      "end": "2014-04",
+      "location": "Aarhus area",
+      "summary": "Five-year apprenticeship with broad infrastructure experience.",
+      "highlights": [
+        "VMware, Hyper-V and Microsoft server technologies alongside Ubuntu",
+        "Cisco/HP networking: routing, switching, VLANs and firewalls",
+        "Client management with SCCM, CAPA, Active Directory and Group Policy",
+        "SQL, storage, PowerShell scripting and Atlassian (Jira/Confluence)"
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "Information Security Foundation (ISO/IEC 27001/27002)", "issuer": "Danish Technological Institute", "year": 2023 },
+    { "name": "ITIL 4 Foundation", "issuer": "AXELOS", "year": null, "note": "Upgrade of the 2017 ITIL Foundation" },
+    { "name": "ITIL Foundation", "issuer": "AXELOS", "year": 2017 },
+    { "name": "PRINCE2 Foundation", "issuer": "AXELOS", "year": 2017 },
+    { "name": "MCSA: Windows Server 2016", "issuer": "Microsoft", "year": 2017 },
+    { "name": "MCSA: Windows Server 2012", "issuer": "Microsoft", "year": 2014 },
+    { "name": "Server Virtualization with Hyper-V and System Center", "issuer": "Microsoft", "year": 2014 },
+    { "name": "CCNA Routing and Switching", "issuer": "Cisco", "year": 2013, "note": "Expired 2016" },
+    { "name": "CCENT", "issuer": "Cisco", "year": 2013, "note": "Expired 2016" },
+    { "name": "DGI E-sports Coach (Foundation, CS:GO B, Rank Up!)", "issuer": "DGI", "year": 2021 }
+  ],
+  "courses": [
+    { "name": "SU-112 Linux Security", "provider": "SuperUsers" },
+    { "name": "SU-114 Linux Automation with Ansible", "provider": "SuperUsers" }
+  ],
+  "skills": {
+    "infrastructure": ["Linux (server and client)", "Windows Server", "Virtualization (VMware, Hyper-V, Citrix)", "Networking (routing, switching, VLAN, firewall)", "Storage and backup"],
+    "development": ["Python", "C/C++", "PowerShell", "Bash", "SQL", "Git"],
+    "operations_and_process": ["Release management", "Incident and problem management", "ITIL", "PRINCE2", "ServiceNow (incl. development)", "Automation (Ansible, scripting)", "Technical documentation"],
+    "cloud": ["Hetzner", "Cloudflare", "AWS, Azure and GCP (project experience)"],
+    "teaching": ["Teaching and coaching", "Classroom management", "Course development"]
+  },
+  "languages": [
+    { "language": "Danish", "fluency": "Native" },
+    { "language": "English", "fluency": "Full professional proficiency" }
+  ],
+  "volunteer": [
+    { "organization": "Esportal Group", "position": "Moderator", "start": "2021-06", "end": "2022-08" },
+    { "organization": "Kronjylland Esport & Tech Club", "position": "Coach (Talent CS:GO, POWER Ligaen Div. 2)", "start": "2021-06", "end": "2021-12" }
+  ],
+  "projects": [
+    { "name": "enghausen.com", "description": "This site: Next.js, TypeScript, Tailwind, MDX. Open repository as part of the portfolio", "status": "In progress" },
+    { "name": "Homelab & self-hosting", "description": "Own network, servers and a range of self-hosted services, used as a playground for new technology", "status": "Ongoing" }
+  ]
+}
